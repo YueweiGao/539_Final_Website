@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter World</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="ways-of-the-wizard-197105.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <header>
+        <h1>Welcome to Harry Potter World</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"class="active">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="spells.html">Spells</a></li>
+                <li><a href="animals.html">Animals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Discover the Magic</h2>
+            <p>Welcome to the wonderful world of Harry Potter! Dive into a realm filled with wizards, witches, magical creatures, and more.</p>
+            <p>Join Harry, Ron, Hermione, and the rest of the beloved characters on their adventures at Hogwarts School of Witchcraft and Wizardry.</p>
+            <p>Use the navigation above to explore different aspects of the Harry Potter universe!</p>
+        </section>
+        <section>
+            <h2>Click the Button to Sort!</h2>
+            <button id="sortingButton">Start Sorting</button>
+            <p><img src="images/sortinghat.gif" alt="hat"></p>
+        </section>
+        <section>
+            <h2>Watch the Welcome Video</h2>
+            <video id="welcomeVideo" controls>
+                <source src="images/welcomevideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id="videoControls">
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="stopVideo()">Stop</button>
+                <button onclick="muteUnmute()">Mute/Unmute</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 539 Final Project_Yuewei Gao. All rights reserved.</p>
+    </footer>
+    <script src="homepage.js"></script>
+</body>
+</html>
